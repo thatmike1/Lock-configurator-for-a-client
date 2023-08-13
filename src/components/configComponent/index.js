@@ -52,10 +52,11 @@ const Config = () => {
   const handleMouseEnter = (index) => {
     setActiveImageIndex(index);
     const imageRect = imageRefs.current[index].getBoundingClientRect();
+    console.log("this should be the position: ", imageRect);
     setDialoguePosition({
       position: "absolute",
       top: imageRect.top,
-      left: imageRect.right - 700,
+      left: imageRect.right - 1000,
     }); // Adjust the left position as needed
   };
 
@@ -504,7 +505,7 @@ const Config = () => {
             </select>
           </div>
         </div>
-        <div>
+        <div className="keys-wrapper">
           <table style={{ borderCollapse: "collapse" }}>
             <thead>
               <tr>
@@ -518,7 +519,11 @@ const Config = () => {
                   <th key={index}>
                     <div className="keycol">
                       <div>
-                        <img src={setting} alt="settings icon" />
+                        <img
+                          className="setting-icon"
+                          src={setting}
+                          alt="settings icon"
+                        />
                       </div>
                       <div style={{ marginTop: "10px" }}>
                         <img src={iconkey} alt="icon" />
@@ -598,6 +603,7 @@ const Config = () => {
                       onMouseEnter={() => handleMouseEnter(rowIndex)}
                     >
                       <img
+                        className="setting-icon"
                         src={setting}
                         alt="Setting"
                         ref={(el) => (imageRefs.current[rowIndex] = el)} // Set the ref for the image element

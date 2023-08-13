@@ -1,192 +1,177 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 
-input{
-    border: none;
+input {
+  border: none;
 }
 
-
-button{
-    background-color: #674fcf;
-    border: none;
-    color: #fff;
-    margin-right: 10px;
-    text-align: center;
-    width: 20px;
-    height: 20px;
-    margin-top: 20px;
+button {
+  background-color: var(--green);
+  border: none;
+  color: #fff;
+  margin-right: 10px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
 }
 .custom-table {
-    margin-top: 150px;
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #f4f4f4;
-  }
-  
-  .custom-table th {
-    padding-top: 200px;
-    background-color: #674fcf;
-    color: white;
-    text-align: left;
-    padding: 10px;
-    border-left: 1px solid white;
-    text-align: center;
-    font-size: small;
-    font-weight: 700;
-    
-  }
+  margin-top: 150px;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f4f4f4;
+}
 
-  .custom-table tbody td{
-    padding: 10px;
-    border-bottom: 1px solid #a9a9a9;
-    text-align: center;
-    font-size: smaller;
-   
-  }
+.custom-table th {
+  padding-top: 200px;
+  background-color: var(--green);
+  color: white;
+  text-align: left;
+  padding: 10px;
+  border-left: 1px solid white;
+  text-align: center;
+  font-size: small;
+  font-weight: 700;
+}
+td {
+  height: 38px;
+}
+.custom-table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #a9a9a9;
+  text-align: center;
+  font-size: smaller;
+}
 
 .col-pos {
-    color: #000 !important;
-    background-color: #dde1e1 !important;
-    width: 3px;
-    font-weight: 300 !important;
-  }
-
-  .col-door {
-    width: 1px; /* Try using a larger width */
-  }
-  .col-cylinder-type {
-    width: 176px;
-  }
-  
-  .col-cylinder-length {
-    width: 130px; 
-  }
-  
-  .col-pc {
-    width: 60px; 
-  }
-
-  #cylinderLength input{
-    text-align: center;
-    width: 50px;
-  }
-
-  
-  .cylinderType-row{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-right: 10px;
-  }
-
-  #cylinderType select{
-    border: none;
+  color: #000 !important;
+  background-color: #dde1e1 !important;
+  width: 3px;
+  font-weight: 300 !important;
 }
 
- #cylinderType input{
-    
-    width: 120px;
- }
-  #doorDesignation input{
-    width: 104px;
-  }
-
-  .cylinder-type-head{
-    display: flex;
-   justify-content: center;
-   align-items: center;
-   padding-top: 10px;
-  }
-
-  #pcs input{
-    width: 30px;
-    text-align: center;
-  }
-
-  #pcs img{
-    cursor: pointer;
-  }
-  .pcs-row{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-  }
-  .flexi{
-
-    display: flex;
-    flex-direction: row;
-
-
-
-  }
-  .keycol{
-    height:148px;
-    background-color: #dde1e1 !important;
-    width: 55px;
-    display: flex;
-    flex-direction: column;
-  }
-  th{
-    height: 148px;
-  }
-
-.vertical
-{
-    width:70px;
-    transform: rotate(-90deg); 
-    margin-top:  22px;
-    height: 33px;
-    position: relative;
-    right: 6px;
-    border: none;
-    padding: 5px;
-    
+.col-door {
+  width: 1px; /* Try using a larger width */
 }
-.pcs{
-margin-top: 23px;
+.col-cylinder-type {
+  width: 176px;
 }
-.pcs input{
+
+.col-cylinder-length {
+  width: 130px;
+}
+
+.col-pc {
+  width: 60px;
+}
+
+#cylinderLength input {
+  text-align: center;
+  width: 50px;
+}
+
+.cylinderType-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 10px;
+}
+
+#cylinderType select {
+  border: none;
+}
+
+#cylinderType input {
+  width: 120px;
+}
+#doorDesignation input {
+  width: 104px;
+}
+
+.cylinder-type-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+#pcs input {
   width: 30px;
   text-align: center;
 }
-.checkbox{
+
+#pcs img {
+  cursor: pointer;
+}
+.pcs-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flexi {
+  display: flex;
+  flex-direction: row;
+}
+.keycol {
+  height: 148px;
+  background-color: #dde1e1 !important;
+  width: 55px;
+  display: flex;
+  flex-direction: column;
+}
+
+.setting-icon {
+  width: 21px;
+  height: 21px;
+}
+
+th {
+  height: 148px;
+}
+
+.vertical {
+  width: 70px;
+  transform: rotate(-90deg);
+  margin-top: 22px;
+  height: 33px;
+  position: relative;
+  right: 6px;
+  border: none;
+  padding: 5px;
+}
+.pcs {
+  margin-top: 23px;
+}
+.pcs input {
+  width: 30px;
+  text-align: center;
+}
+.checkbox {
   height: 37.4px;
-  width: 55px;  
-
-
-
-
+  width: 55px;
 }
-.tableborder{
+.tableborder {
   border: 1px solid #a9a9a9;
-
-  
-  
 }
-.dis{
+.dis {
   display: flex;
   justify-content: center;
 }
-.inp{
+.inp {
   height: 18px;
   width: 18px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); 
-
-
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
-input[type="checkbox"] { 
+input[type="checkbox"] {
   /* Heres your symbol replacement */
   content: "X";
   color: #fff;
   /* The following positions my tick in the center, 
    * but you could just overlay the entire box
    * with a full after element with a background if you want to */
-
 }
 
 .dropdown {
@@ -195,7 +180,7 @@ input[type="checkbox"] {
   background-color: white;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow to the dropdown */
   border: 1px solid #ccc; /* Add border to the dropdown */
- /* Add padding to the dropdown */
+  /* Add padding to the dropdown */
 }
 
 /* Style for dialogue options */
@@ -207,26 +192,29 @@ input[type="checkbox"] {
 .dialogue-option.active {
   background-color: #eef1f4; /* Add background color for active option */
 }
-table{
+table {
   position: relative;
   z-index: 0;
 }
 .dialogue-option.first-option {
   background-color: #ccc; /* Add background color for the first option */
 }
-.keys-header{
-background-color: #674fcf;
-color:white;
-text-align: center;
-
+.keys-header {
+  background-color: var(--green);
+  color: white;
+  text-align: center;
 }
-.main{
+.keys-wrapper {
+  margin-top: 2px;
+}
+
+.main {
   display: flex;
   flex-direction: column;
-  align-items: center ;
+  align-items: center;
 }
-.complete-config{
-  background-color: #674fcf;
+.complete-config {
+  background-color: var(--green);
   border: none;
   color: #fff;
   margin-right: 10px;
