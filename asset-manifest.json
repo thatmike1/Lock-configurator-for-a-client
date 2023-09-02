@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Lock-configurator-for-a-client/static/css/main.f188c416.css",
+    "main.js": "/Lock-configurator-for-a-client/static/js/main.46d1e0bc.js",
+    "index.html": "/Lock-configurator-for-a-client/index.html",
+    "main.f188c416.css.map": "/Lock-configurator-for-a-client/static/css/main.f188c416.css.map",
+    "main.46d1e0bc.js.map": "/Lock-configurator-for-a-client/static/js/main.46d1e0bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f188c416.css",
+    "static/js/main.46d1e0bc.js"
+  ]
+}
