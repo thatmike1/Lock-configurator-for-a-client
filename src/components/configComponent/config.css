@@ -196,6 +196,9 @@ input[type="checkbox"] {
 .dialogue-option {
   padding: 4px 8px;
 }
+.dialogue-option:hover {
+  background-color: #eef1f4;
+}
 
 /* Style for active dialogue option */
 .dialogue-option.active {

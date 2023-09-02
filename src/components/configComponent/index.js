@@ -623,36 +623,37 @@ const Config = () => {
                 onMouseLeave={() => handleMouseLeave()}
               >
                 <div className="dialogue-option first-option ">
-                  <span style={{ marginLeft: "20px" }}>Edit Cylinder</span>{" "}
-                  {activeImageIndex}
+                  <span style={{ marginLeft: "20px" }}>Upravit cylindr</span>{" "}
+                  {activeImageIndex + 1}
                 </div>
-                <div className="dialogue-option">
-                  <span style={{ marginLeft: "20px" }}>Close Cylinder</span>{" "}
+                {/* <div className="dialogue-option">
+                  <span style={{ marginLeft: "20px" }}>Close cylindr</span>{" "}
                   {activeImageIndex}
-                </div>
+                </div> */}
                 <div
                   className="dialogue-option"
                   onClick={() => handleInsertBefore(activeImageIndex)}
                 >
-                  <img src={up} alt="up icon" /> Insert Cylinder Before{" "}
+                  <img src={up} alt="up icon" />
+                  Přidat cylindr před{" "}
                 </div>
                 <div
                   className="dialogue-option"
                   onClick={() => handleInsertAfter(activeImageIndex)}
                 >
                   <img src={down} alt="down icon" />
-                  Insert Cylinder After{" "}
+                  Přidat cylindr po{" "}
                 </div>
                 <div
                   className="dialogue-option"
                   onClick={() => handleDelete(activeImageIndex)}
                 >
                   <img src={deleted} alt="delete icon" />
-                  Delete Cylinder{" "}
+                  Odstranit cylindr{" "}
                 </div>
                 <div className="dialogue-option">
                   <img src={reset} alt="reset icon" />
-                  reset Cylinder{" "}
+                  Resetovat cylindr{" "}
                 </div>
               </div>
             )}
