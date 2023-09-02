@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Lock-configurator-for-a-client/static/css/main.f188c416.css",
-    "main.js": "/Lock-configurator-for-a-client/static/js/main.2c764323.js",
+    "main.css": "/Lock-configurator-for-a-client/static/css/main.184e8f29.css",
+    "main.js": "/Lock-configurator-for-a-client/static/js/main.2acf1835.js",
     "index.html": "/Lock-configurator-for-a-client/index.html",
-    "main.f188c416.css.map": "/Lock-configurator-for-a-client/static/css/main.f188c416.css.map",
-    "main.2c764323.js.map": "/Lock-configurator-for-a-client/static/js/main.2c764323.js.map"
+    "main.184e8f29.css.map": "/Lock-configurator-for-a-client/static/css/main.184e8f29.css.map",
+    "main.2acf1835.js.map": "/Lock-configurator-for-a-client/static/js/main.2acf1835.js.map"
   },
   "entrypoints": [
-    "static/css/main.f188c416.css",
-    "static/js/main.2c764323.js"
+    "static/css/main.184e8f29.css",
+    "static/js/main.2acf1835.js"
   ]
 }
