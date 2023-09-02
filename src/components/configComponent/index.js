@@ -518,19 +518,14 @@ const Config = () => {
                 {headerStates.map((headerState, index) => (
                   <th key={index}>
                     <div className="keycol">
-                      <div>
+                      {/* <div>
                         <img
                           className="setting-icon"
                           src={setting}
                           alt="settings icon"
                         />
-                      </div>
-                      <div style={{ marginTop: "10px" }}>
-                        <img src={iconkey} alt="icon" />
-                        <span style={{ fontWeight: "100", marginLeft: "5px" }}>
-                          S.{index + 1}
-                        </span>
-                      </div>
+                      </div> */}
+
                       <div>
                         {/* "inputField" */}
                         <input
@@ -574,6 +569,12 @@ const Config = () => {
                           alt="remove"
                           onClick={() => handleRemove(index)}
                         />
+                      </div>
+                      <div className="key-num-wrapper">
+                        <span style={{ fontWeight: "100", marginLeft: "5px" }}>
+                          {index + 1}.
+                        </span>
+                        <img className="key-icon" src={iconkey} alt="icon" />
                       </div>
                     </div>
                   </th>
